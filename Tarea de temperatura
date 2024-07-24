@@ -1,0 +1,250 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO0RI7g9L2hVwDHOrI5XxtI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Raulingk/prograIII--2024-SEMI/blob/main/Tarea%20de%20temperatura\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pGfUuoW14fxu",
+        "outputId": "9cc3b182-f865-4e51-c089-7090654951f1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hola mundo\n",
+            "hola Raul Mendez , inicial: R M\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"hola mundo\")\n",
+        "nombre = \"Raul Mendez\"\n",
+        "\n",
+        "print(\"hola\", nombre , \", inicial:\", nombre [0], nombre[5])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"hola mundo\")\n",
+        "nombre = \"Raul Mendez\"\n",
+        "\n",
+        "print(\"hola\", nombre,\"inicial:\", nombre[0],nombre[5])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0D4vci1B9WAe",
+        "outputId": "b8fff3c8-cb26-4736-86da-bf81b0bc0ef4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hola mundo\n",
+            "hola Raul Mendez inicial: R M\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num1=5\n",
+        "num2=9.5\n",
+        "resp=num1+num2\n",
+        "print(\"la suma es:\",resp)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "fa_LO7Th97it",
+        "outputId": "7b99fbef-91ea-4618-8f2e-4469d4c2f2fa"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "la suma es: 14.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"num 1\")\n",
+        "num1 = int(input())\n",
+        "\n",
+        "print(\"num 2\")\n",
+        "num2 = float(input())\n",
+        "\n",
+        "resp = num1 + num2\n",
+        "print(\"la suma es:\", resp)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "oLJ7Pg0X_TdS",
+        "outputId": "e1f7a805-20fc-45f5-e9c1-78cec3b249c3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "num 1\n",
+            "5\n",
+            "num 2\n",
+            "5\n",
+            "la suma es: 10.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Tipos de datos\n",
+        "num1 = 5\n",
+        "num2 = 5.9\n",
+        "nombre = \"Raul Mendez\"\n",
+        "print(nombre[0:4], nombre[:4], nombre [-1:], nombre[5-len(nombre)])\n",
+        "\n",
+        "estado =True\n",
+        "print(estado)\n",
+        "\n",
+        "print(type(nombre), type(num1), type(num2), type(estado))"
+      ],
+      "metadata": {
+        "id": "DqpAASl1CTNG"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"ingrese un numero\"))\n",
+        "if num % 2 == 0:\n",
+        "    print(\"El numero es par\", num)\n",
+        "else:\n",
+        "    print(\"El numero es impar\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xXmIqHmxErKh",
+        "outputId": "72e1ba0e-a8e0-4195-fa4f-2b119511291e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ingrese un numero7\n",
+            "El numero es impar\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def fahrenheit_a_celsius(fahrenheit):\n",
+        "    celsius = (fahrenheit - 32) * 5.0/9.0\n",
+        "    return celsius\n",
+        "fahrenheit = float(input(\"ingresar los grados en fahrenheit:\"))\n",
+        "celsius = fahrenheit_a_celsius(fahrenheit)\n",
+        "print(f\"{fahrenheit} grados Fahrenheit son {celsius:.2f} grados Celsius.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PMAFyCPUK3ci",
+        "outputId": "96d68284-0a7f-4c3c-c8c3-3e7bc9c79937"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ingresar los grados en fahrenheit:33\n",
+            "33.0 grados Fahrenheit son 0.56 grados Celsius.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "celsius = int(input(\"ingresar la temperatura en celsius:\"))\n",
+        "fahrenheit = (celsius * 9/5)+ 32\n",
+        "kelvin = celsius + 273.15\n",
+        "print(f\"{celsius:.2f} grados Celsius son {fahrenheit:.2f} grados fahrenheit {kelvin:.2f} grados kelvin\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "b0lyzRA0LD98",
+        "outputId": "b9842f28-8053-418d-afbf-209771057525"
+      },
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ingresar la temperatura en celsius:33\n",
+            "33.00 grados Celsius son 91.40 grados fahrenheit 306.15 grados kelvin\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
